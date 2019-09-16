@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>理解requireJS原理，实现一个简单的模块加载器</title>
+</head>
+<body>
+<script src="JoseyRequire2.js" type="text/javascript"></script>
+<script type="text/javascript">
+    require(['module1','module2'], function (module1,module2) {
+        var name = module1.getName();
+        var name2 = module2.getName();
+        console.log(name,name2);
+    });
+</script>
+</body>
